@@ -1,0 +1,34 @@
+#BODY
+push
+move
+250 250 0
+rotate
+y 25
+push
+scale
+1 1.6 1
+sphere
+0 0 0 90
+pop
+push
+move
+0 -140 0
+scale
+1 2.5 1
+sphere
+-40 0 0 30
+sphere
+40 0 0 30
+pop
+push
+move
+0 160 0
+scale
+1.6 1 1
+sphere
+0 0 0 30
+pop
+pop
+display
+save
+gallery.png
