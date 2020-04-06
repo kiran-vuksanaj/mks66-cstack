@@ -52,9 +52,9 @@ void push( struct stack *s ) {
 
   s->top++;
   s->data[ s->top ] = m;
-  printf("freshly pushed:\n");
-  print_matrix(peek(s));
-  printf("??\n");
+  /* printf("freshly pushed:\n"); */
+  /* print_matrix(peek(s)); */
+  /* printf("??\n"); */
 }
 
 /*======== struct matix *peek() ==========

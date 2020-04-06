@@ -84,9 +84,9 @@ void parse_file ( char * filename,
                   struct matrix * edges,
                   struct matrix * polygons,
                   screen s) {
-  printf("hey!\n");
-  print_stack(csystems);
-  printf("bye!\n");
+  /* printf("hey!\n"); */
+  /* print_stack(csystems); */
+  /* printf("bye!\n"); */
   FILE *f;
   char line[255];
   clear_screen(s);
@@ -103,8 +103,8 @@ void parse_file ( char * filename,
   while ( fgets(line, sizeof(line), f) != NULL ) {
     line[strlen(line)-1]='\0';
     //printf(":%s:\n",line);
-	printf("its a new day\n");
-	print_stack(csystems);
+	/* printf("its a new day\n"); */
+	/* print_stack(csystems); */
     double xvals[4];
     double yvals[4];
     double zvals[4];
@@ -232,9 +232,9 @@ void parse_file ( char * filename,
       /* printf("%lf %lf %lf\n", */
       /* xvals[0], yvals[0], zvals[0]); */
       tmp = make_translate( xvals[0], yvals[0], zvals[0]);
-	  print_matrix(tmp);
-	  print_matrix( peek(csystems) );
-	  printf("then...\n");
+	  /* print_matrix(tmp); */
+	  /* print_matrix( peek(csystems) ); */
+	  /* printf("then...\n"); */
 	  matrix_mult(peek(csystems), tmp);
 	  copy_matrix(tmp,peek(csystems));
     }//end translate
