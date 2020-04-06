@@ -340,7 +340,7 @@ Returns:
 copy matrix a to matrix b
 */
 void copy_matrix(struct matrix *a, struct matrix *b) {
-
+  b->lastcol = a->lastcol;
   int r, c;
 
   for (r=0; r < a->rows; r++) 
